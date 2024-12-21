@@ -16,5 +16,8 @@ RUN /etc/ccda/files/scripts/do-magic.sh
 
 CMD /usr/libexec/tomcat/server start
 
+ADD ./war/referenceccdaservice.war /var/lib/tomcat/webapps/referenceccdaservice.war
+
+
 # Expose the default port
 EXPOSE 8080
